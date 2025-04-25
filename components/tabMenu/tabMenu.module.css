@@ -1,0 +1,20 @@
+.tabContainer {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  scroll-behavior: smooth; 
+}
+
+.tabContainer::-webkit-scrollbar {
+  display: none;
+}
+
+@media (width >=768px) {
+  .tabContainer {
+    overflow-x: hidden;
+  }
+}
+

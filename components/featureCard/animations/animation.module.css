@@ -1,0 +1,82 @@
+.image {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.fileType {
+  position: absolute;
+  transform-origin: center;
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.popOut {
+  position: absolute;
+  opacity: 0;
+  transform-origin: center;
+}
+
+.popOut1 {
+  top: 13vw;
+  right: -7vw;
+}
+
+.popOut2 {
+  bottom: 3vw;
+  left: -7vw;
+}
+
+.phone_bar_1 {
+  bottom: 2vh;
+  left: -2vh;
+}
+
+.phone_bar_2 {
+  bottom: 2vh;
+  right: -2vh;
+}
+
+.filePreview {
+  width: 0;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 0;
+}
+
+.imageWithPopUp {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: relative;
+  bottom: 0;
+}
+
+@media (width <=768px) {
+
+  .image,
+  .phone,
+  .imageWithPopUp {
+    width: 50vw;
+  }
+
+  .arrow {
+    width: 3vw !important;
+  }
+
+  .popOut {
+    width: 50%;
+  }
+
+  .fileType {
+    width: 18vw;
+  }
+
+  .phone_bar_1, .phone_bar_2 {
+    width: 11%
+  }
+}
